@@ -1,4 +1,4 @@
-"E:\ElDewrito 0.7 Official\maps\tags.dat"
+D:\eldewrito\eldewrito 0.7\ElDewrito\maps
 SetVariable h3maps ""
 SetVariable h3mythicmaps ""
 SetVariable odstmaps ""
@@ -6,7 +6,6 @@ SetVariable h3mccmaps ""
 SetVariable reachmaps ""
 SetVariable workingdir ""
 SetVariable modsfolder ""
-SetVariable odstmccmaps ""
 
 // Update at the end of the script
 CreateModPackage 1 Large
@@ -25,6 +24,13 @@ useshadercache workingdir\caches\shadercache
 
 // Add Enash's Car Hog
 RunCommands workingdir\cmds\CarHog.cmds
+
+##echo emotes
+
+openmodpackage workingdir\paks\refined_emotes.pak
+applymodpackage
+exitmodpackage
+
 
 ################################################################################
 		// COASTAL RACEWAY
