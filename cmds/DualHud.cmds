@@ -36,6 +36,21 @@ setfield HudWidgets[7].BitmapWidgets[1].PlacementData[0].Scale -1 1
 savetagchanges
 exit
 
+	echo smg dmg
+	
+edittag ui\chud\smg.chud_definition
+copyblockelements HudWidgets 3 1
+exit
+
+edittag ui\chud\smg_damage.chud_definition
+pasteblockelements HudWidgets 6
+setfield HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\weapon_scematics.bitmap
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Scale -1 1
+SetField HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\variant_weapons\smg.bitmap
+SetField HudWidgets[6].BitmapWidgets[1].BitmapSequenceIndex 4
+savetagchanges
+exit
+
 echo automag
 
 edittag ui\chud\magnum.chud_definition
