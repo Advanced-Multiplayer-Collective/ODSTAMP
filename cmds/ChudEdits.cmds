@@ -29,6 +29,7 @@ exit
 
 edittag ui\chud\battle_rifle.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -56,6 +57,8 @@ exit
 
 edittag ui\chud\magnum.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -184,6 +187,14 @@ EditTag ui\chud\missile.chud_definition
 SetField HudWidgets[1].PlacementData[0].Offset 0 975
 SetField HudWidgets[1].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[1].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+savetagchanges
+exit
+
+EditTag ui\chud\carbine_ammo.chud_definition
+SetField HudWidgets[5].PlacementData[0].Offset 130 -110
+SetField HudWidgets[5].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[5].TextWidgets[0].PlacementData[0].Offset -134 20
+SetField HudWidgets[5].PlacementData[0].Anchor BottomRight
 savetagchanges
 exit
 

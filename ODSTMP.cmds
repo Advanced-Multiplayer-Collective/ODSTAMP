@@ -1401,6 +1401,8 @@ edittag ui\chud\automag.chdt
 	# text
 foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
 foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -2591,6 +2593,7 @@ pasteblockelements hudwidgets
 removeblockelements hudwidgets 4 1
 copyblockelements hudwidgets 1 1
 pasteblockelements hudwidgets 1
+SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -2670,15 +2673,6 @@ foreach chdt named: carbine_ setfield hudwidgets[4].bitmapwidgets[0].placementda
 foreach chdt named: carbine_ setfield hudwidgets[6].placementdata[0].anchor BottomRight
 foreach chdt named: carbine_ setfield hudwidgets[6].placementdata[0].offset 130 -110
 foreach chdt named: carbine_ foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.55 0.55
-
-echo Ammo Carbine is different
-
-EditTag ui\chud\carbine_ammo.chud_definition
-SetField HudWidgets[5].PlacementData[0].Offset 130 -110
-SetField HudWidgets[5].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
-SetField HudWidgets[5].TextWidgets[0].PlacementData[0].Offset -134 20
-savetagchanges
-exit
 
 foreach chdt named: magnum_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
 foreach chdt named: magnum_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
