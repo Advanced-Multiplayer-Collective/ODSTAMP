@@ -195,6 +195,78 @@ SetField HudGlobals[0].HudAttributes[0].ScaleUnknown1 1
 SetField HudGlobals[0].HudAttributes[0].SpacingUnknown1 200
 SetField HudGlobals[0].HudAttributes[0].ScaleUnknown2 0.05
 SetField HudGlobals[0].HudAttributes[0].SpacingUnknown2 100
+SetField HudGlobals[0].HudAttributes[1].WarpSourceFovY 4.5
+SetField HudGlobals[0].HudAttributes[1].ScaleUnknown1 1
+SetField HudGlobals[0].HudAttributes[1].SpacingUnknown1 200
+SetField HudGlobals[0].HudAttributes[1].ScaleUnknown2 0.05
+SetField HudGlobals[0].HudAttributes[1].SpacingUnknown2 100
+SetField HudGlobals[0].HudAttributes[2].WarpSourceFovY 4.5
+SetField HudGlobals[0].HudAttributes[2].ScaleUnknown1 1
+SetField HudGlobals[0].HudAttributes[2].SpacingUnknown1 200
+SetField HudGlobals[0].HudAttributes[2].ScaleUnknown2 0.05
+SetField HudGlobals[0].HudAttributes[2].SpacingUnknown2 100
+SetField HudGlobals[0].HudAttributes[3].WarpSourceFovY 4.5
+SetField HudGlobals[0].HudAttributes[3].ScaleUnknown1 1
+SetField HudGlobals[0].HudAttributes[3].SpacingUnknown1 200
+SetField HudGlobals[0].HudAttributes[3].ScaleUnknown2 0.05
+SetField HudGlobals[0].HudAttributes[3].SpacingUnknown2 100
+SetField HudGlobals[0].HudAttributes[4].WarpSourceFovY 4.5
+SetField HudGlobals[0].HudAttributes[4].ScaleUnknown1 1
+SetField HudGlobals[0].HudAttributes[4].SpacingUnknown1 200
+SetField HudGlobals[0].HudAttributes[4].ScaleUnknown2 0.05
+SetField HudGlobals[0].HudAttributes[4].SpacingUnknown2 100
+SetField HudGlobals[1].HudAttributes[0].WarpSourceFovY 4.5
+SetField HudGlobals[1].HudAttributes[0].ScaleUnknown1 1
+SetField HudGlobals[1].HudAttributes[0].SpacingUnknown1 200
+SetField HudGlobals[1].HudAttributes[0].ScaleUnknown2 0.05
+SetField HudGlobals[1].HudAttributes[0].SpacingUnknown2 100
+SetField HudGlobals[1].HudAttributes[1].WarpSourceFovY 4.5
+SetField HudGlobals[1].HudAttributes[1].ScaleUnknown1 1
+SetField HudGlobals[1].HudAttributes[1].SpacingUnknown1 200
+SetField HudGlobals[1].HudAttributes[1].ScaleUnknown2 0.05
+SetField HudGlobals[1].HudAttributes[1].SpacingUnknown2 100
+SetField HudGlobals[1].HudAttributes[2].WarpSourceFovY 4.5
+SetField HudGlobals[1].HudAttributes[2].ScaleUnknown1 1
+SetField HudGlobals[1].HudAttributes[2].SpacingUnknown1 200
+SetField HudGlobals[1].HudAttributes[2].ScaleUnknown2 0.05
+SetField HudGlobals[1].HudAttributes[2].SpacingUnknown2 100
+SetField HudGlobals[1].HudAttributes[3].WarpSourceFovY 4.5
+SetField HudGlobals[1].HudAttributes[3].ScaleUnknown1 1
+SetField HudGlobals[1].HudAttributes[3].SpacingUnknown1 200
+SetField HudGlobals[1].HudAttributes[3].ScaleUnknown2 0.05
+SetField HudGlobals[1].HudAttributes[3].SpacingUnknown2 100
+SetField HudGlobals[1].HudAttributes[4].WarpSourceFovY 4.5
+SetField HudGlobals[1].HudAttributes[4].ScaleUnknown1 1
+SetField HudGlobals[1].HudAttributes[4].SpacingUnknown1 200
+SetField HudGlobals[1].HudAttributes[4].ScaleUnknown2 0.05
+SetField HudGlobals[1].HudAttributes[4].SpacingUnknown2 100
 savetagchanges
 exit
+
+EditTag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[0].WarpDestinationOffsetZ -0.95
+SetField HudGlobals[0].HudAttributes[0].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[1].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[1].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[2].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[2].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[3].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[3].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[4].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[4].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[0].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[0].WarpDestinationOffsetZ -0.95
+SetField HudGlobals[1].HudAttributes[0].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[1].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[1].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[2].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[2].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[3].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[3].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[4].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[4].WarpSourceAspect 1
+savetagchanges
+exit
+
 
