@@ -1410,8 +1410,6 @@ edittag ui\chud\assault_rifle.chdt
 	# text
 foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
 foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
-SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
