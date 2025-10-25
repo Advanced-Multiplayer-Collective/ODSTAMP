@@ -152,6 +152,8 @@ exit
 
 EditTag ui\chud\missile.chud_definition
 SetField HudWidgets[1].PlacementData[0].Offset 0 975
+SetField HudWidgets[1].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[1].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
 savetagchanges
 exit
 
