@@ -1,3 +1,11 @@
+"E:\ElDewrito 0.7 Official\maps\tags.dat"
+SetVariable h3maps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 maps"
+SetVariable h3mythicmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 Mythic maps"
+SetVariable odstmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 ODST maps"
+SetVariable h3mccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+SetVariable reachmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo Reach maps"
+SetVariable workingdir "C:\Users\zekken\Documents\AMP PROJECTS\ODSTAMP"
+SetVariable modsfolder "E:\ElDewrito 0.7 Official\mods"
 
 // Update at the end of the script
 CreateModPackage 1 Large
@@ -5043,26 +5051,6 @@ SetField DisappearDistance 255
 savetagchanges
 exit
 
-echo fix assault rifle compass
-
-EditTag objects\weapons\rifle\assault_rifle\shaders\compass_red.shader
-SetArgument self_illum_color 2 0 0 1
-SetArgument self_illum_intensity 22
-savetagchanges
-exit
-
-edittag objects\weapons\rifle\assault_rifle\shaders\compass_green.shader
-setargument self_illum_color 0 2 0 1
-savetagchanges
-exit
-
-edittag objects\weapons\rifle\assault_rifle\shaders\compass_yellow.shader
-setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\compass_yellow.bitmap
-setargument self_illum_color 2 2 0 1
-savetagchanges
-exit
-
-
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -5083,6 +5071,25 @@ openmodpackage modsfolder\ODSTAMP.pak
 ApplyModPackageTags
 Done
 ExitModPackage
+
+echo fix assault rifle compass
+
+EditTag objects\weapons\rifle\assault_rifle\shaders\compass_red.shader
+SetArgument self_illum_color 2 0 0 1
+SetArgument self_illum_intensity 22
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\shaders\compass_green.shader
+setargument self_illum_color 0 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\shaders\compass_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\compass_yellow.bitmap
+setargument self_illum_color 2 2 0 1
+savetagchanges
+exit
 
 AddModFiles "workingdir\assets"
 
