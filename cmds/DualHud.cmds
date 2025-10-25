@@ -48,6 +48,9 @@ setfield HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\weapon_scematics.
 setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Scale -1 1
 SetField HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\variant_weapons\smg.bitmap
 SetField HudWidgets[6].BitmapWidgets[1].BitmapSequenceIndex 4
+SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Offset 15 65
+SetField HudWidgets[6].BitmapWidgets[1].RenderData[0].ExternalInput WeaponVersionNumber
+SetField HudWidgets[6].BitmapWidgets[1].RenderData[0].LocalColorA 255 200 122 122
 savetagchanges
 exit
 
