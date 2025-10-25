@@ -11,7 +11,7 @@ exit
 edittag ui\chud\automag.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
 SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
+#SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -51,7 +51,7 @@ exit
 edittag ui\chud\excavator.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
 SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
+#SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -65,7 +65,7 @@ exit
 edittag ui\chud\plasma_pistol.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
 SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
+#SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -103,7 +103,7 @@ exit
 edittag ui\chud\plasma_rifle.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
 SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
+#SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -143,7 +143,7 @@ exit
 edittag ui\chud\spike_rifle.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
 SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
+#SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -156,7 +156,7 @@ exit
 edittag ui\chud\smg_silenced.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
 SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
-SetField HudWidgets[7].TextWidgets[0].RenderData[0].ShaderType Crosshair
+#SetField HudWidgets[7].TextWidgets[0].RenderData[0].ShaderType Crosshair
 
 savetagchanges
 exit
