@@ -5012,7 +5012,7 @@ EditTag objects\weapons\rifle\assault_rifle\shaders\compass_red.shader
 SetArgument self_illum_color 2 0 0 1
 SetArgument self_illum_intensity 22
 savetagchanges
-exitmodpackage
+exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\compass_green.shader
 setargument self_illum_color 0 2 0 1
