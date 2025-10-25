@@ -1521,6 +1521,12 @@ foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
 savetagchanges
 exit
 
+	# Beam Rifle Ammo Size
+EditTag ui\chud\beam_rifle.chud_definition
+SetField HudWidgets[6].TextWidgets[0].PlacementData[0].Scale 0.5 0.5
+SaveTagChanges
+Exit
+
 #duplicatetag ui\chud\bitmaps\scoreboard_meter.bitmap ui\chud\bitmaps\scoreboard_meter_dxt5
 #edittag ui\chud\bitmaps\scoreboard_meter_dxt5.bitm
 #reencodebitmap dxt5
