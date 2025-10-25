@@ -10,16 +10,20 @@ exit
 
 edittag ui\chud\automag.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\assault_rifle.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\rocket.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -32,16 +36,21 @@ edittag ui\chud\smg.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
 SetField HudWidgets[5].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
 SetField HudWidgets[5].BitmapWidgets[1].PlacementData[0].Scale 0.5 0.5
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\carbine.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\excavator.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -52,21 +61,27 @@ exit
 
 edittag ui\chud\plasma_pistol.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\needler.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
+
 savetagchanges
 exit
 
 edittag ui\chud\hammer.chud_definition
 setfield HudWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[2].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\fuel_rod_cannon.chud_definition
 setfield HudWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -78,31 +93,38 @@ SetField HudWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 0.315 0.315
 setfield HudWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
 SetField HudWidgets[2].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
 SetField HudWidgets[4].BitmapWidgets[0].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+SetField HudWidgets[2].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\plasma_rifle.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[5].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\brute_shot.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\sentinel_beam.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\shotgun.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\sniper_rifle.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[4].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
@@ -111,27 +133,35 @@ setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
 setfield HudWidgets[1].BitmapWidgets[1].PlacementData[0].Scale 1.35 1.35
 setfield HudWidgets[1].BitmapWidgets[2].PlacementData[0].Scale 1.35 1.35
 setfield HudWidgets[1].BitmapWidgets[3].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\spike_rifle.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\beam_rifle.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[6].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
 edittag ui\chud\smg_silenced.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].ShaderType Crosshair
+SetField HudWidgets[7].TextWidgets[0].RenderData[0].ShaderType Crosshair
+
 savetagchanges
 exit
 
 edittag ui\chud\machinegun_turret.chud_definition
 setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.05 1.05
 setfield HudWidgets[0].TextWidgets[0].PlacementData[0].Scale 0.6 0.6
+SetField HudWidgets[0].TextWidgets[0].RenderData[0].ShaderType Crosshair
 savetagchanges
 exit
 
