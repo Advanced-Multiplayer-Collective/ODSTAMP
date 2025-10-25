@@ -5006,6 +5006,27 @@ SetField DisappearDistance 255
 savetagchanges
 exit
 
+echo fix assault rifle compass
+
+EditTag objects\weapons\rifle\assault_rifle\shaders\compass_red.shader
+SetArgument self_illum_color 2 0 0 1
+SetArgument self_illum_intensity 22
+savetagchanges
+exitmodpackage
+
+edittag objects\weapons\rifle\assault_rifle\shaders\compass_green.shader
+setargument self_illum_color 0 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\shaders\compass_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\compass_yellow.bitmap
+setargument self_illum_color 2 2 0 1
+savetagchanges
+exit
+
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
