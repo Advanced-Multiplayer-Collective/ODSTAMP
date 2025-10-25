@@ -5051,7 +5051,12 @@ SetField DisappearDistance 255
 savetagchanges
 exit
 
+## echo move scoreboard timer up to prevent clipping with gametypes
 
+edittag ui\chud\survival_scoreboard.chud_definition
+SetField HudWidgets[0].TextWidgets[2].PlacementData[0].Offset -185 -87.5
+SaveTagChanges
+Exit
 
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
