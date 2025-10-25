@@ -2671,6 +2671,13 @@ foreach chdt named: carbine_ setfield hudwidgets[6].placementdata[0].anchor Bott
 foreach chdt named: carbine_ setfield hudwidgets[6].placementdata[0].offset 130 -110
 foreach chdt named: carbine_ foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.55 0.55
 
+echo Ammo Carbine is different
+
+EditTag ui\chud\carbine_ammo.chud_definition
+SetField HudWidgets[5].PlacementData[0].Offset 130 -110
+savetagchanges
+exit
+
 foreach chdt named: magnum_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
 foreach chdt named: magnum_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
 foreach chdt named: magnum_power setfield hudwidgets[7].placementdata[0].anchor BottomRight
