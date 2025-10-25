@@ -4982,6 +4982,34 @@ SetField BeginFadeDistance 255
 savetagchanges
 exit
 
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+SetField AnimationDistance 255
+savetagchanges
+exit
+
+EditTag flog\vehicles\mlx\mlx.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+SetField AnimationDistance 255
+savetagchanges
+exit
+
+EditTag objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+SetField AnimationDistance 255
+savetagchanges
+exit
+
+EditTag objects\vehicles\mongoose\motogoose\motogoose.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+SetField AnimationDistance 255
+savetagchanges
+exit
+
 EditTag objects\vehicles\civilian\truck_cab_large\truck_cab_large.model
 SetField DisappearDistance 255
 SetField BeginFadeDistance 255
