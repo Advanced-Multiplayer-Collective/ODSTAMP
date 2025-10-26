@@ -54,15 +54,17 @@ SetField HudWidgets[6].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
 SetField HudWidgets[6].BitmapWidgets[0].RenderData[0].OutputColorA WeaponOutlineDamage
 SetField HudWidgets[6].BitmapWidgets[0].BaseFlags WeaponSwapHack
 SetField HudWidgets[6].BitmapWidgets[0].RenderData[0].OutputScalarA RangeInput
-
 SetField HudWidgets[6].BitmapWidgets[0].RuntimeWidgetIndex 23
 SetField HudWidgets[6].BitmapWidgets[0].BitmapSequenceIndex 0
 SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Origin 0.3 2
 SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Offset 15 65
 SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Scale -1 1
-
 SetField HudWidgets[6].TextWidgets[2].PlacementData[0].Offset 128 20
 SetField HudWidgets[6].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
 
 savetagchanges
 exit
@@ -142,6 +144,7 @@ SetField HudWidgets[5].BitmapWidgets[1].PlacementData[0].Offset -125 3
 savetagchanges
 exit
 
+
 echo ROF SMG
 
 EditTag ui\chud\smg_rof.chud_definition
@@ -203,6 +206,10 @@ echo POWER PLASMA RIFLE
 EditTag ui\chud\plasma_rifle_power.chud_definition
 SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Offset 152 20
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Origin 0 1
 savetagchanges
 exit
 
@@ -214,3 +221,254 @@ SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Offset 152 20
 savetagchanges
 exit
+
+
+
+
+
+
+echo ROF BATTLE RIFLE
+
+EditTag ui\chud\battle_rifle_rof.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+echo RANGE BATTLE RIFLE
+
+edittag ui\chud\battle_rifle_range.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+echo POWER BATTLE RIFLE
+
+EditTag ui\chud\battle_rifle_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+
+echo DAMAGE BATTLE RIFLE
+
+EditTag ui\chud\battle_rifle_damage.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+ECHO AMMO BATTLE RIFLE 
+
+edittag ui\chud\battle_rifle_ammo.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+echo ACCURACY BATTLE RIFLE
+
+edittag ui\chud\battle_rifle_accuracy.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\assault_rifle_accuracy.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\assault_rifle_damage.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\assault_rifle_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\assault_rifle_rof.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\smg_accuracy.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\smg_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\smg_rof.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\dmr.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\dmr_accuracy.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\dmr_ammo.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\dmr_damage.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\dmr_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\dmr_rof.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\magnum_damage.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\magnum_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\excavator_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\carbine_ammo.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\covenant_carbine_accuracy.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\covenant_carbine_damage.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\covenant_carbine_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\covenant_carbine_range.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\covenant_carbine_rof.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
+edittag ui\chud\plasma_pistol_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
+
