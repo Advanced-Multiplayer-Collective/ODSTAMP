@@ -1261,12 +1261,13 @@ SetField Images[0].Height 128
 savetagchanges
 exit
 
-edittag ui\chud\bitmaps\ballistic_meters.bitmap
-ImportBitmap 0 "workingdir\bitmaps\ballistics_translate_retailblue_ARGB_32F.dds"
-SetField Images[0].Width 512
-SetField Images[0].Height 256
-savetagchanges
-exit
+	# I cant get this to import and it doesnt seem to be needed
+#edittag ui\chud\bitmaps\ballistic_meters.bitmap
+#ImportBitmap 0 "workingdir\bitmaps\ballistics_translate_retailblue_ARGB_32F.dds"
+#SetField Images[0].Width 512
+#SetField Images[0].Height 256
+#savetagchanges
+#exit
 
 	# this is completely unnecessary as everything is in consumeable_scematics :(
 #edittag ui\chud\bitmaps\equipment_scematics.bitmap
