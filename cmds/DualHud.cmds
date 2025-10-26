@@ -506,3 +506,22 @@ SetField HudWidgets[0].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[0].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
 savetagchanges
 exit
+
+# Fix the zoom hud because I somehow fucked it on the SMG ACCURACY and SMG POWER
+
+EditTag ui\chud\smg_accuracy.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin -1 -1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset 0 0
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+
+edittag ui\chud\smg_power.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin -1 -1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset 0 0
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
