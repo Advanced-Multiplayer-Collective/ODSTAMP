@@ -142,3 +142,75 @@ SetField HudWidgets[5].BitmapWidgets[1].PlacementData[0].Offset -125 3
 savetagchanges
 exit
 
+echo ROF SMG
+
+EditTag ui\chud\smg_rof.chud_definition
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Offset 128 20
+savetagchanges
+exit
+
+echo POWER SMG
+
+EditTag ui\chud\smg_power.chud_definition
+SetField HudWidgets[2].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Offset 126 20
+savetagchanges
+exit
+
+echo SMG ACCURACY
+
+EditTag ui\chud\smg_accuracy.chud_definition
+SetField HudWidgets[2].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Offset 127 20
+savetagchanges
+exit
+
+
+echo POWER MAGNUM
+
+EditTag ui\chud\magnum_power.chud_definition
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Offset 120 20
+savetagchanges
+exit
+
+
+echo DAMAGE magnum
+
+EditTag ui\chud\magnum_damage.chud_definition
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Offset 120 20
+savetagchanges
+exit
+
+echo POWER MAULER
+
+EditTag ui\chud\excavator_power.chud_definition
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[2].PlacementData[0].Offset 120 20
+savetagchanges
+exit
+
+echo POWER PLASMA RIFLE
+
+EditTag ui\chud\plasma_rifle_power.chud_definition
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Offset 152 20
+savetagchanges
+exit
+
+
+echo POWER PLASMA PISTOL
+
+EditTag ui\chud\plasma_pistol_power.chud_definition
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[3].TextWidgets[0].PlacementData[0].Offset 152 20
+savetagchanges
+exit
