@@ -38,8 +38,8 @@ exit
 
 	echo smg dmg
 	
-edittag ui\chud\smg.chud_definition
-copyblockelements HudWidgets 3 1
+edittag ui\chud\smg_accuracy.chud_definition
+copyblockelements HudWidgets 2 1
 exit
 
 edittag ui\chud\smg_damage.chud_definition
