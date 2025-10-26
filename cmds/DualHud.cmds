@@ -499,3 +499,10 @@ SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
 savetagchanges
 exit
+
+
+EditTag ui\chud\plasma_turret.chud_definition
+SetField HudWidgets[0].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[0].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+savetagchanges
+exit
