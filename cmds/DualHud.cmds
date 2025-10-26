@@ -54,6 +54,16 @@ SetField HudWidgets[6].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
 SetField HudWidgets[6].BitmapWidgets[0].RenderData[0].OutputColorA WeaponOutlineDamage
 SetField HudWidgets[6].BitmapWidgets[0].BaseFlags WeaponSwapHack
 SetField HudWidgets[6].BitmapWidgets[0].RenderData[0].OutputScalarA RangeInput
+
+SetField HudWidgets[6].BitmapWidgets[0].RuntimeWidgetIndex 23
+SetField HudWidgets[6].BitmapWidgets[0].BitmapSequenceIndex 0
+SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Origin 0.3 2
+SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Offset 15 65
+SetField HudWidgets[6].BitmapWidgets[0].PlacementData[0].Scale -1 1
+
+SetField HudWidgets[6].TextWidgets[2].PlacementData[0].Offset 128 20
+SetField HudWidgets[6].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
+
 savetagchanges
 exit
 
