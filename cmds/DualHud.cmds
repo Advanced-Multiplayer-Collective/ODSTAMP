@@ -160,6 +160,10 @@ EditTag ui\chud\smg_power.chud_definition
 SetField HudWidgets[2].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Offset 126 20
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
 savetagchanges
 exit
 
@@ -169,6 +173,10 @@ EditTag ui\chud\smg_accuracy.chud_definition
 SetField HudWidgets[2].TextWidgets[0].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Scale 0.55 0.55
 SetField HudWidgets[2].TextWidgets[2].PlacementData[0].Offset 127 20
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
 savetagchanges
 exit
 
@@ -210,6 +218,10 @@ SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Anchor BottomRight
 SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Offset -106.5 43.5
 SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 2.4 2.4
 SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
 savetagchanges
 exit
 
@@ -421,6 +433,10 @@ SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Offset -106.5 43.5
 savetagchanges
 exit
 
@@ -469,6 +485,17 @@ SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
 SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Offset -106.5 43.5
 savetagchanges
 exit
 
+edittag ui\chud\covenant_carbine_rof.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+savetagchanges
+exit
