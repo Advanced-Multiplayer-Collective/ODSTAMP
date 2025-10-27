@@ -69,7 +69,7 @@ SaveTagChanges
 Exit
 
 EditTag objects\characters\floodcombat_base\ai\floodcombat_base.character
-SetField MovementProperties[0].FlagsODST DisallowCrouch,CureIsolationJump
+SetField MovementProperties[0].FlagsH3 DisallowCrouch,CureIsolationJump
 SaveTagChanges
 Exit
 
@@ -411,7 +411,7 @@ SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitArmedState None
 SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitImpulseStateHO None
 SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitMiscState None
 SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitZoomState None
-SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitUnknownState2 None
 SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponArmedStateHO None
 SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponCrosshairState None
 SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponFlash None
@@ -503,7 +503,7 @@ SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitArmedState None
 SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitImpulseStateHO None
 SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitMiscState None
 SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitZoomState None
-SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitUnknownState2 None
 SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponArmedStateHO None
 SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponCrosshairState None
 SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponFlash None
@@ -595,7 +595,7 @@ SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitArmedState None
 SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitImpulseStateHO None
 SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitMiscState None
 SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitZoomState None
-SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitUnknownState2 None
 SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponArmedStateHO None
 SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponCrosshairState None
 SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponFlash None
@@ -687,7 +687,7 @@ SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitArmedState None
 SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitImpulseStateHO None
 SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitMiscState None
 SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitZoomState None
-SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitUnknownState2 None
 SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponArmedStateHO None
 SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponCrosshairState None
 SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponFlash None

@@ -15,14 +15,14 @@ nametag * objects\vehicles\civilian\shaders\car1_glass
 duplicatetag objects\vehicles\warthog\shaders\exterior_cc.rmsh
 nametag * objects\vehicles\civilian\shaders\car1_rim
 
-generateshader shader 3 2 0 1 1 2 1 0 0 1 0
-generateshader shader 7 2 0 1 1 2 0 0 0 1 0
-generateshader shader 7 2 0 1 1 2 1 0 0 1 0
+generateshader shader 3 2 0 1 1 2 1 0 0 1 0 0 0 0 0
+generateshader shader 7 2 0 1 1 2 0 0 0 1 0 0 0 0 0
+generateshader shader 7 2 0 1 1 2 1 0 0 1 0 0 0 0 0
 
-generaterendermethod objects\vehicles\civilian\shaders\car1_interior_plastic shaders\shader_templates\_3_2_0_1_1_2_1_0_0_1_0_0
-generaterendermethod objects\vehicles\civilian\shaders\car1_rim_metal shaders\shader_templates\_7_2_0_1_1_2_0_0_0_1_0_0
-generaterendermethod objects\vehicles\civilian\shaders\car1_interior_fabric shaders\shader_templates\_7_2_0_1_1_2_0_0_0_1_0_0
-generaterendermethod objects\vehicles\civilian\shaders\car1_wheels shaders\shader_templates\_7_2_0_1_1_2_0_0_0_1_0_0
+generaterendermethod objects\vehicles\civilian\shaders\car1_interior_plastic shaders\shader_templates\_3_2_0_1_1_2_1_0_0_1_0_0_0_0_0
+generaterendermethod objects\vehicles\civilian\shaders\car1_rim_metal shaders\shader_templates\_7_2_0_1_1_2_0_0_0_1_0_0_0_0_0
+generaterendermethod objects\vehicles\civilian\shaders\car1_interior_fabric shaders\shader_templates\_7_2_0_1_1_2_0_0_0_1_0_0_0_0_0
+generaterendermethod objects\vehicles\civilian\shaders\car1_wheels shaders\shader_templates\_7_2_0_1_1_2_0_0_0_1_0_0_0_0_0
 
 generatebitmap objects\vehicles\civilian\bitmaps\car1_shell "workingdir\bitmaps\objects\vehicles\civilian\car1\bitmaps\car1.dds"
 generatebitmap objects\vehicles\civilian\bitmaps\car1_shell_cc "workingdir\bitmaps\objects\vehicles\civilian\car1\bitmaps\car1_cc.dds"
