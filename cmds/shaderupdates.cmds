@@ -1,0 +1,170 @@
+cs
+var shaderGroups = new List<string>()
+{
+    "rmbk",
+    "rmcs",
+    "rmct",
+    "rmd ",
+    "rmfl",
+    "rmfs",
+    "rmfu",
+    "rmgl",
+    "rmhg",
+    "rmmx",
+    "rmsh",
+    "rmss",
+    "rmtr",
+    "rmw ",
+    "rmzo",
+    "beam",
+    "cntl",
+    "decs",
+    "ltvl",
+    "prt3",
+};
+
+using (var stream = Cache.OpenCacheReadWrite())
+{
+    foreach (var group in shaderGroups)
+    {
+        var tags = Cache.TagCache.FindAllInGroup(group);
+
+        foreach (var tag in tags)
+        {
+            var definition = Cache.Deserialize(stream, tag);
+            Cache.Serialize(stream, tag, definition);
+        }
+    }
+}
+:x
+
+NameTag ms30\shaders\particle_options\distortion_diffuse.render_method_option ms30\shaders\particle_options\specialized_rendering_distortion
+NameTag ms30\shaders\shader_options\car_paint.render_method_option ms30\shaders\shader_options\material_car_paint_option
+NameTag ms30\shaders\shader_options\chameleon.render_method_option ms30\shaders\shader_options\albedo_chameleon
+NameTag ms30\shaders\shader_options\chameleon_albedo_masked.render_method_option ms30\shaders\shader_options\albedo_chameleon_albedo_masked
+NameTag ms30\shaders\shader_options\chameleon_masked.render_method_option ms30\shaders\shader_options\albedo_chameleon_masked
+NameTag ms30\shaders\shader_options\color_mask_hard_light.render_method_option ms30\shaders\shader_options\albedo_color_mask_hard_light
+NameTag ms30\shaders\shader_options\detail_plus_detail_masked.render_method_option ms30\shaders\shader_options\bump_detail_plus_detail_masked
+NameTag ms30\shaders\shader_options\distortion.render_method_option ms30\shaders\shader_options\sfx_distort
+NameTag ms30\shaders\shader_options\illum_ml_add_five_change_color.render_method_option ms30\shaders\shader_options\illum_multilayer_add_five_change_color
+NameTag ms30\shaders\shader_options\illum_ml_add_four_change_color.render_method_option ms30\shaders\shader_options\illum_multilayer_add_four_change_color
+NameTag ms30\shaders\shader_options\simple_four_change_color.render_method_option ms30\shaders\shader_options\illum_simple_four_change_color
+NameTag ms30\shaders\shader_options\two_change_color_anim_overlay.render_method_option ms30\shaders\shader_options\albedo_two_change_color_anim
+NameTag ms30\shaders\shader_options\two_change_color_chameleon.render_method_option ms30\shaders\shader_options\albedo_two_change_color_chameleon
+NameTag ms30\shaders\shader_options\two_change_color_tex_overlay.render_method_option ms30\shaders\shader_options\albedo_two_change_color_tex_overlay
+NameTag rasterizer\shaders\chud_double_gradient.pixel_shader rasterizer\shaders\chud_meter_double_gradient
+NameTag rasterizer\shaders\chud_double_gradient.vertex_shader rasterizer\shaders\chud_meter_double_gradient
+NameTag rasterizer\shaders\chud_radial_gradient.pixel_shader rasterizer\shaders\chud_meter_radial_gradient
+NameTag rasterizer\shaders\chud_radial_gradient.vertex_shader rasterizer\shaders\chud_meter_radial_gradient
+NameTag rasterizer\shaders\chud_unknown.pixel_shader rasterizer\shaders\chud_meter_gradient_inverse
+NameTag rasterizer\shaders\chud_unknown.vertex_shader rasterizer\shaders\chud_meter_gradient_inverse
+NameTag rasterizer\shaders\hud_camera.pixel_shader rasterizer\shaders\decorator_edit
+NameTag rasterizer\shaders\hud_camera.vertex_shader rasterizer\shaders\decorator_edit
+NameTag rasterizer\shaders\hud_camera_mask.pixel_shader rasterizer\shaders\smirnov
+NameTag rasterizer\shaders\hud_camera_mask.vertex_shader rasterizer\shaders\smirnov
+NameTag rasterizer\shaders\hud_camera_nightvision.pixel_shader rasterizer\shaders\hdr_retrieve
+NameTag rasterizer\shaders\hud_camera_nightvision.vertex_shader rasterizer\shaders\hdr_retrieve
+NameTag rasterizer\shaders\hud_camera_nightvision_screenshot.pixel_shader rasterizer\shaders\unknown_94
+NameTag rasterizer\shaders\hud_camera_nightvision_screenshot.vertex_shader rasterizer\shaders\unknown_94
+NameTag rasterizer\shaders\hud_camera_pda.pixel_shader rasterizer\shaders\sniper_scope_stencil_pc
+NameTag rasterizer\shaders\hud_camera_pda.vertex_shader rasterizer\shaders\sniper_scope_stencil_pc
+NameTag rasterizer\shaders\screen_space_reflection.pixel_shader rasterizer\shaders\unknown_101
+NameTag rasterizer\shaders\screen_space_reflection.vertex_shader rasterizer\shaders\unknown_101
+NameTag rasterizer\shaders\screen_space_reflection_blur.pixel_shader rasterizer\shaders\unknown_106
+NameTag rasterizer\shaders\screen_space_reflection_blur.vertex_shader rasterizer\shaders\unknown_106
+NameTag rasterizer\shaders\unknown_default_shader_100.pixel_shader rasterizer\shaders\radial_blur
+NameTag rasterizer\shaders\unknown_default_shader_100.vertex_shader rasterizer\shaders\radial_blur
+NameTag rasterizer\shaders\unknown_default_shader_102.pixel_shader rasterizer\shaders\unknown_102
+NameTag rasterizer\shaders\unknown_default_shader_102.vertex_shader rasterizer\shaders\unknown_102
+NameTag rasterizer\shaders\unknown_default_shader_103.pixel_shader rasterizer\shaders\unknown_103
+NameTag rasterizer\shaders\unknown_default_shader_103.vertex_shader rasterizer\shaders\unknown_103
+NameTag rasterizer\shaders\unknown_default_shader_104.pixel_shader rasterizer\shaders\unknown_104
+NameTag rasterizer\shaders\unknown_default_shader_104.vertex_shader rasterizer\shaders\unknown_104
+NameTag rasterizer\shaders\unknown_default_shader_105.pixel_shader rasterizer\shaders\unknown_105
+NameTag rasterizer\shaders\unknown_default_shader_105.vertex_shader rasterizer\shaders\unknown_105
+NameTag rasterizer\shaders\unknown_default_shader_107.pixel_shader rasterizer\shaders\unknown_107
+NameTag rasterizer\shaders\unknown_default_shader_107.vertex_shader rasterizer\shaders\unknown_107
+NameTag rasterizer\shaders\unknown_default_shader_109.pixel_shader rasterizer\shaders\unknown_109
+NameTag rasterizer\shaders\unknown_default_shader_109.vertex_shader rasterizer\shaders\unknown_109
+NameTag rasterizer\shaders\unknown_default_shader_96.pixel_shader rasterizer\shaders\ssao
+NameTag rasterizer\shaders\unknown_default_shader_96.vertex_shader rasterizer\shaders\ssao
+NameTag rasterizer\shaders\unknown_default_shader_97.pixel_shader rasterizer\shaders\ssao_blur
+NameTag rasterizer\shaders\unknown_default_shader_97.vertex_shader rasterizer\shaders\ssao_blur
+NameTag rasterizer\shaders\unknown_default_shader_98.pixel_shader rasterizer\shaders\unknown_98
+NameTag rasterizer\shaders\unknown_default_shader_98.vertex_shader rasterizer\shaders\unknown_98
+NameTag rasterizer\shaders\unknown_default_shader_99.pixel_shader rasterizer\shaders\lightshafts
+NameTag rasterizer\shaders\unknown_default_shader_99.vertex_shader rasterizer\shaders\lightshafts
+NameTag rasterizer\shaders\vision_mode.pixel_shader rasterizer\shaders\hud_camera_nightvision
+NameTag rasterizer\shaders\vision_mode.vertex_shader rasterizer\shaders\hud_camera_nightvision
+NameTag shaders\default_bitmaps\bitmaps\default_car_paint_bump_detail.bitmap shaders\default_bitmaps\bitmaps\sparklenoisemap
+NameTag shaders\particle_options\distortion_diffuse.render_method_option shaders\particle_options\specialized_rendering_distortion
+NameTag shaders\shader_options\albedo_two_change_color_anim_overlay.render_method_option shaders\shader_options\albedo_two_change_color_anim
+NameTag shaders\shader_options\car_paint_bump_detail.bitmap ms30\shaders\default_bitmaps\bitmaps\sparklenoisemap
+NameTag shaders\shader_options\distort_on.render_method_option shaders\shader_options\sfx_distort
+NameTag shaders\shader_options\illum_ml_add_five_change_color.render_method_option shaders\shader_options\illum_multilayer_five_change_color
+NameTag shaders\shader_options\illum_ml_add_four_change_color.render_method_option shaders\shader_options\illum_multilayer_four_change_color
+NameTag shaders\shader_options\illum_palettized_depth_fade.render_method_option shaders\screen_options\illum_palettized_depth_fade
+NameTag shaders\shader_options\material_car_paint.render_method_option shaders\shader_options\material_car_paint_option
+NameTag shaders\shader_options\sfx_distort.render_method_option shaders\shader_options\distort_on
+##NameTag objects\eldewrito\reforge\shaders\glass.render_method_template shaders\halogram_templates\_0_1_1_0_0_0_0_0_0
+##NameTag ms30\shaders\halogram_templates\_0_1_1_0_0_0_0_0_0.pixel_shader shaders\halogram_templates\_0_1_1_0_0_0_0_0_0
+##NameTag ms30\shaders\halogram_templates\_0_1_1_0_0_0_0_0_0.vertex_shader shaders\halogram_templates\_0_1_1_0_0_0_0_0_0
+SaveTagNames
+
+OpenCacheFile reachmaps\m45.map
+PortTag rasterizer\rain\rain_noise_boundary.bitmap
+PortTag shaders\default_bitmaps\bitmaps\color_white_alpha_black.bitmap
+Exit
+
+// Maybe move to using loose tags 
+GenerateBitmap shaders\default_bitmaps\bitmaps\checker_board "workingdir\bitmaps\checker_board.dds"
+GenerateBitmap shaders\default_bitmaps\bitmaps\color_blue "workingdir\bitmaps\color_blue.dds"
+
+// This is an array type bitmap which currently has issues when trying to import
+DuplicateTag rasterizer\water\wave_test1\wave_test1_slope_water.bitmap rasterizer\water\static_wave\static_wave_slope_water
+
+EditTag *.rasg
+AddBlockElements defaultbitmaps
+SetField defaultbitmaps[*].bitmap rasterizer\diffuse_power_specular\diffuse_power.bitmap
+SaveTagChanges
+Exit
+
+GenerateRmdf Beam
+GenerateRmdf Black
+GenerateRmdf Contrail
+GenerateRmdf Cortana
+GenerateRmdf Custom
+GenerateRmdf Decal
+GenerateRmdf Foliage NoFixes
+GenerateRmdf Fur
+GenerateRmdf FurStencil
+GenerateRmdf Glass
+GenerateRmdf Halogram
+GenerateRmdf LightVolume
+GenerateRmdf Mux
+GenerateRmdf Particle
+GenerateRmdf Screen
+GenerateRmdf Shader
+GenerateRmdf Terrain
+GenerateRmdf Water
+GenerateRmdf ZOnly
+
+RecompileShaders beam
+RecompileShaders black
+RecompileShaders contrail
+RecompileShaders cortana
+RecompileShaders custom
+RecompileShaders decal
+RecompileShaders foliage
+RecompileShaders fur
+RecompileShaders fur_stencil
+RecompileShaders glass
+RecompileShaders halogram
+RecompileShaders light_volume
+RecompileShaders mux
+RecompileShaders particle
+RecompileShaders screen
+RecompileShaders shader
+RecompileShaders terrain
+RecompileShaders water
+RecompileShaders zonly
