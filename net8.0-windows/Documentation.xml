@@ -2953,6 +2953,11 @@
             A null stringID.
             </summary>
         </member>
+        <member name="F:TagTool.Common.StringId.Empty">
+            <summary>
+            An empty stringID (for compatibility with usages expecting 'Empty').
+            </summary>
+        </member>
         <member name="P:TagTool.Common.StringId.Value">
             <summary>
             Gets the value of the stringID as a 32-bit integer.
