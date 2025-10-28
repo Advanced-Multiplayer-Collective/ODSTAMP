@@ -5121,6 +5121,21 @@ SetString ssmg_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue074"
 savetagchanges
 exit
 
+##echo Fix MachineGun Turret to fill full meter
+
+edittag objects\weapons\turret\machinegun_turret\machinegun_turret.weapon
+SetField Magazines[0].RoundsTotalMaximum 200
+SetField Magazines[0].RoundsLoadedMaximum 200
+savetagchanges
+exit
+
+
+edittag ui\chud\machinegun_turret.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarD 200
+savetagchanges
+exit
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
 ////////////////////////////////////////////////////////////////////////////////
