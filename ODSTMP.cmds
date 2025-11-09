@@ -22,16 +22,14 @@ Mainmenu Multiplayer Character
 ## useaudiocache workingdir\caches\audiocache
 ## useshadercache workingdir\caches\shadercache
 
-RunCommands workingdir\cmds\shaderupdates.cmds
-
 // Add Enash's Car Hog
 RunCommands workingdir\cmds\CarHog.cmds
 
 ##echo emotes
 
-##openmodpackage workingdir\paks\refined_emotes.pak
-##applymodpackage
-##exitmodpackage
+openmodpackage workingdir\paks\refined_emotes.pak
+applymodpackage
+exitmodpackage
 
 ################################################################################
 		// COASTAL RACEWAY
@@ -79,12 +77,12 @@ setfield machines[28].paletteindex -1
 savetagchanges
 exit
 
-##OpenModPackage "workingdir\paks\civcar.pak"
-##ApplyModPackage
-##ExitModPackage
-##OpenModPackage "workingdir\paks\odstcargotruck.pak"
-##ApplyModPackage
-##ExitModPackage
+OpenModPackage "workingdir\paks\civcar.pak"
+ApplyModPackage
+ExitModPackage
+OpenModPackage "workingdir\paks\odstcargotruck.pak"
+ApplyModPackage
+ExitModPackage
 AddForgeItem "CAR, MLX" VEHICLES flog\vehicles\mlx\mlx.vehicle
 AddForgeItem "CAR, CIVILIAN" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
 AddForgeItem "CAR, POLICE" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
@@ -1221,8 +1219,8 @@ setfield HudGlobals[0].RangeItemOutline 0 172 54 255
 setfield HudGlobals[0].PowerItemOutline 0 255 192 1
 # add missing hudshaders
 addblockelements hudshaders
-setfield hudshaders[*].vertexshader rasterizer\shaders\chud_meter_gradient_inverse.vtsh
-setfield hudshaders[*].vertexshader rasterizer\shaders\chud_meter_gradient_inverse.pixl
+setfield hudshaders[*].vertexshader rasterizer\shaders\chud_unknown.vtsh
+setfield hudshaders[*].pixelshader rasterizer\shaders\chud_unknown.pixl
 # fix chgd for forge
 copyblockelements hudglobals
 pasteblockelements hudglobals

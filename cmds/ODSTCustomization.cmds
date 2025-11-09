@@ -1746,7 +1746,7 @@ exit
 
 	echo visor
 
-generaterendermethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor shaders\shader_templates\_0_1_0_1_1_2_0_0_0_1_0_0_0_0_0
+generaterendermethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor shaders\shader_templates\_0_1_0_1_1_2_0_0_0_1_0_0
 
 EditTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
 SetField BaseRenderMethod shaders\shader.render_method_definition
@@ -1755,7 +1755,7 @@ SetField Options[3].OptionIndex 1
 SetField Options[4].OptionIndex 1
 SetField Options[5].OptionIndex 2
 SetField Options[9].OptionIndex 1
-SetField ShaderProperties[0].Template shaders\shader_templates\_0_1_0_1_1_2_0_0_0_1_0_0_0_0_0.render_method_template
+SetField ShaderProperties[0].Template shaders\shader_templates\_0_1_0_1_1_2_0_0_0_1_0_0.render_method_template
 SetBitmap base_map objects\characters\spartans\bitmaps\spartan_helmets\spartan_helmet_malcolm_diff.bitmap
 SetBitmap detail_map shaders\default_bitmaps\bitmaps\default_detail.bitmap
 SetField ShaderProperties[0].TextureConstants[1].TextureTransformConstantIndex 1
@@ -1960,7 +1960,7 @@ exit
 
 generateshader shader 3 1 0 1 1 2 0 0 0 1 0 0
 
-generaterendermethod objects\characters\spartans\shaders\spartan_armor shaders\shader_templates\_3_1_0_1_1_2_0_0_0_1_0_0_0_0_0
+generaterendermethod objects\characters\spartans\shaders\spartan_armor shaders\shader_templates\_3_1_0_1_1_2_0_0_0_1_0_0
 
 EditTag objects\characters\spartans\shaders\spartan_armor.shader
 SetField BaseRenderMethod shaders\shader.render_method_definition
@@ -1970,7 +1970,7 @@ SetField Options[3].OptionIndex 1
 SetField Options[4].OptionIndex 1
 SetField Options[5].OptionIndex 2
 SetField Options[9].OptionIndex 1
-SetField ShaderProperties[0].Template shaders\shader_templates\_3_1_0_1_1_2_0_0_0_1_0_0_0_0_0.render_method_template
+SetField ShaderProperties[0].Template shaders\shader_templates\_3_1_0_1_1_2_0_0_0_1_0_0.render_method_template
 SetBitmap base_map objects\characters\spartans\bitmaps\spartan_armor_diff.bitmap
 SetField ShaderProperties[0].TextureConstants[0].FilterMode Anisotropic2Expensive
 SetBitmap detail_map objects\characters\spartans\bitmaps\spartan_detail_maps\spartan_metal_detail.bitmap
