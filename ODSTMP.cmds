@@ -9,8 +9,8 @@ SetVariable modsfolder "E:\ElDewrito 0.7 Official\mods"
 
 // Update at the end of the script
 CreateModPackage 1 Large
-ODST Anniversary Multiplayer
-ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
+ODST Advanced Multiplayer
+ODST Advanced Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
 Vegetal & AMP Collective
 0.3
 Mainmenu Multiplayer Character
@@ -237,6 +237,7 @@ Exit
 
 OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
 DuplicateTag objects\vehicles\phantom\shaders\dull_metal.shader cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
+PortTag Replace levels\atlas\shared\shaders\glass\hub_walkway_glass.shader
 PortTag !UpdateMapFiles *.scnr
 Exit
 
@@ -5058,6 +5059,83 @@ edittag ui\chud\survival_scoreboard.chud_definition
 SetField HudWidgets[0].TextWidgets[2].PlacementData[0].Offset -185 -87.5
 SaveTagChanges
 Exit
+
+## echo Fix OUT of ammo text overlapping
+
+EditTag ui\hud\hud_messages.multilingual_unicode_string_list
+SetString amag_switch_to "Out of ammo|n|nPress \ue446 to switch to |r\ufb04"
+SetString ar_acc_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue139"
+SetString ar_dmg_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue13a"
+SetString ar_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue13b"
+SetString ar_rof_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue13c"
+SetString ar_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue112"
+SetString be_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue126"
+SetString br_acc_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue13d"
+SetString br_dmg_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue13e"
+SetString br_mag_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue13f"
+SetString br_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue140"
+SetString br_rng_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue141"
+SetString br_rof_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue142"
+SetString br_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue114"
+SetString bs_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue116"
+SetString cc_acc_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue143"
+SetString cc_dmg_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue144"
+SetString cc_mag_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue145"
+SetString cc_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue146"
+SetString cc_rng_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue147"
+SetString cc_rof_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue148"
+SetString cc_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue117"
+SetString ex_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue160"
+SetString ex_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue11a"
+SetString fc_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue11f"
+SetString gc_switch_to "Out of ammo|n\r\nPress \ue446 to switch to 7-Wood"
+SetString ham_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue120"
+SetString laz_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue12c"
+SetString ml_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue124"
+SetString mp_dmg_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue156"
+SetString mp_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue158"
+SetString mp_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue123"
+SetString mr_acc_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue149"
+SetString mr_dmg_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue150"
+SetString mr_mag_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue151"
+SetString mr_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue152"
+SetString mr_rng_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue153"
+SetString mr_rof_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue154"
+SetString mr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue170"
+SetString nd_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue125"
+SetString pp_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue162"
+SetString pp_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue129"
+SetString pr_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue164"
+SetString pr_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue12a"
+SetString ps_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue119"
+SetString rl_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue12d"
+SetString sen_b_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue12e"
+SetString sg_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue12f"
+SetString smg_acc_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue166"
+SetString smg_dmg_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue169"
+SetString smg_pwr_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue15b"
+SetString smg_rof_switch_to "Out of ammo|n \rPress \ue446 to switch to \ue15d"
+SetString smg_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue130"
+SetString sn_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue131"
+SetString sr_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue132"
+SetString ssmg_switch_to "Out of ammo|n\r\nPress \ue446 to switch to \ue074"
+savetagchanges
+exit
+
+##echo Fix MachineGun Turret to fill full meter
+
+edittag objects\weapons\turret\machinegun_turret\machinegun_turret.weapon
+SetField Magazines[0].RoundsTotalMaximum 200
+SetField Magazines[0].RoundsLoadedMaximum 200
+savetagchanges
+exit
+
+
+edittag ui\chud\machinegun_turret.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarD 200
+savetagchanges
+exit
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
