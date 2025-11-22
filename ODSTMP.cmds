@@ -238,6 +238,7 @@ Exit
 
 OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
 DuplicateTag objects\vehicles\phantom\shaders\dull_metal.shader cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
+PortTag Replace levels\atlas\shared\shaders\glass\hub_walkway_glass.shader
 PortTag !UpdateMapFiles *.scnr
 Exit
 
