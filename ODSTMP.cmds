@@ -2115,7 +2115,7 @@ exit
 
 edittag sound\game_sfx\multiplayer\player_respawn.sound
 importsound "workingdir\sounds\respawn.mp3"
-setfield SoundClass.Eldorado GameEvent
+setfield SoundClass.HaloOnline GameEvent
 #setfield Playback.GainBase -5
 savetagchanges
 exit

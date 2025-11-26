@@ -69,7 +69,7 @@ SaveTagChanges
 Exit
 
 EditTag objects\characters\floodcombat_base\ai\floodcombat_base.character
-SetField MovementProperties[0].FlagsH3 DisallowCrouch,CureIsolationJump
+SetField MovementProperties[0].Flags DisallowCrouch,CureIsolationJump
 SaveTagChanges
 Exit
 
