@@ -242,6 +242,12 @@ NameBlamTag levels\atlas\shared\default\bitmaps\d_weathering_glass_detail.bitmap
 PortTag !UpdateMapFiles *.scnr
 Exit
 
+# Removed the duplicated bridge sections
+EditTag cone_collective\levels\multi\homefront\homefront.scenario_structure_bsp
+SetField InstancedGeometryInstances[477].Flags NotForRender
+SetField InstancedGeometryInstances[474].Flags NotForRender
+SaveTagChanges
+Exit
 
 #UpdateMapFiles "workingdir\CustomMaps\Homefront"
 
