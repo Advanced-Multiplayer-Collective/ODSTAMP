@@ -246,6 +246,8 @@ Exit
 EditTag cone_collective\levels\multi\homefront\homefront.scenario_structure_bsp
 SetField InstancedGeometryInstances[477].Flags NotForRender
 SetField InstancedGeometryInstances[474].Flags NotForRender
+SetField InstancedGeometryInstances[473].Flags NotForRender
+SetField InstancedGeometryInstances[476].Flags NotForRender
 SaveTagChanges
 Exit
 
