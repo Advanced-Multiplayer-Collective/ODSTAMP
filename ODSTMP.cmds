@@ -12,7 +12,7 @@ CreateModPackage 1 Large
 ODST Advanced Multiplayer
 ODST Advanced Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
 Vegetal & AMP Collective
-0.3
+0.4
 Mainmenu Multiplayer Character
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -243,6 +243,13 @@ Exit
 
 EditTag cone_collective\levels\multi\homefront\homefront.scenario
 SetField MapId 32269
+SaveTagChanges
+Exit
+
+# Removed the duplicated bridge sections
+EditTag cone_collective\levels\multi\homefront\homefront.scenario_structure_bsp
+SetField InstancedGeometryInstances[477].Flags NotForRender
+SetField InstancedGeometryInstances[474].Flags NotForRender
 SaveTagChanges
 Exit
 
@@ -5148,7 +5155,7 @@ CreateModPackage 1 large
 ODST Anniversary Multiplayer
 ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
 Vegetal & AMP Collective
-0.3
+0.4
 MainMenu Multiplayer Character
 
 openmodpackage modsfolder\ODSTAMP.pak
