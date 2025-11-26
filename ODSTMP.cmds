@@ -251,6 +251,33 @@ SetField InstancedGeometryInstances[476].Flags NotForRender
 SaveTagChanges
 Exit
 
+# Fix the rest of the signs
+EditTag cone_collective\objects\levels\multi\homefront\signs\cannon_bay\shaders\cannon_bay_sign.shader
+SetField ShaderProperties[0].BlendMode Additive
+SaveTagChanges
+Exit
+
+EditTag objects\levels\atlas\shared\signage\shaders\poster_2x1v.shader
+SetField ShaderProperties[0].BlendMode Additive
+SaveTagChanges
+Exit
+
+EditTag objects\levels\atlas\shared\signage\shaders\newmombasa_4x1.shader
+SetField ShaderProperties[0].BlendMode Additive
+SaveTagChanges
+Exit
+
+EditTag cone_collective\objects\levels\multi\homefront\signs\parking\shaders\parking_sign.shader
+SetField ShaderProperties[0].BlendMode AlphaBlend
+SaveTagChanges
+Exit
+
+EditTag objects\levels\atlas\shared\signage\shaders\arg\sign_hub_open_closed.shader
+SetField ShaderProperties[0].BlendMode Additive
+SaveTagChanges
+Exit
+
+
 #UpdateMapFiles "workingdir\CustomMaps\Homefront"
 
 UpdateMapFiles "workingdir\CustomMaps\info"
