@@ -286,6 +286,6 @@ AddSkyBox "HOMEFRONT" cone_collective\levels\multi\homefront\homefront
 
 
 EditTag multiplayer\forge_globals.forge_globals_definition
-MaximizeBudget All
+MaximizeBudget AllObjects
 SaveTagChanges
 Exit

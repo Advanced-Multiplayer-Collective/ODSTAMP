@@ -230,6 +230,10 @@ donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
 Exit
 
+EditTag levels\zedd\roundabout\roundabout.scenario
+SetField Vehicles[0].NameIndex -1
+SaveTagChanges
+Exit
 
 ################################################################################
 		// HOMEFRONT
@@ -915,12 +919,10 @@ PortTag Replace globals\collision_damage\landing_hard.damage_effect
 PortTag Replace globals\hs_damage.damage_effect
 PortTag Replace globals\distance.damage_effect
 PortTag Replace ui\chud\globals.chgd
-PortTag Replace ui\chud\odst_recon.chdt
-PortTag Replace ui\chud\bitmaps\init_lines.bitm
-PortTag Replace ui\chud\survival_scoreboard.chdt
 PortTag Replace globals\default_vision_mode.vmdx
 #donotreplacegroups bitm
 PortTag objects\levels\atlas\beacons\recon_helmet_damaged\recon_helmet_damaged.hlmt
+ignoreblamtag ui\chud\bitmaps\hud_reticles.bitmap
 ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
 ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
 PortTag Replace objects\weapons\pistol\excavator\excavator.weapon
@@ -3521,6 +3523,7 @@ nametag levels\ui\mainmenu\mainmenu.scnr levels\ui\mainmenu\mainmenu_ho
 savetagnames
 
 OpenCacheFile "workingdir\CustomMaps\mainmenu.map"
+IgnoreBlamTag sound\levels\main_menu\forerunner_int\details\shimmer_details_stereo.sound
 porttag replace ui\halox\main_menu\bottom_gradient_ui.bitm
 porttag replace ui\halox\main_menu\bungielogo.bitm
 porttag replace ui\halox\main_menu\mainmenu_bkd.bitm
