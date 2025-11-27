@@ -4934,6 +4934,9 @@ runcommands workingdir\cmds\HDWeapons.cmds
 ## echo HD weapon skins
 runcommands workingdir\cmds\DualHud.cmds
 
+## echo Automag Animations
+runcommands workingdir\cmds\AutomagAnimations.cmds
+
 edittag levels\atlas\shared\decals\panels\panel_slot_huge.decal_system
 setfield Decal[0].RenderMethod.ShaderProperties[0].TextureConstants[0].Bitmap decal\dank\with\tits\fix.bitmap
 savetagchanges

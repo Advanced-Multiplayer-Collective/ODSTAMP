@@ -1,0 +1,350 @@
+EditTag objects\weapons\pistol\automag\fp_automag\fp_automag.render_model
+SetField MarkerGroups[1].Markers[0].Translation 0.003 -0.00477 -0.032
+SetField MarkerGroups[1].Markers[0].Rotation -0.475 -0.028 -0.33 0.818
+SaveTagChanges
+Exit
+
+EditTag objects\characters\odst_recon\fp\weapons\pistol\fp_automag\fp_automag.model_animation_graph
+
+AddAnimation workingdir\animations\spartan_fp\automag
+
+AddBlockElements Modes[0].WeaponClass[0].WeaponIk
+SetField Modes[0].WeaponClass[0].WeaponIk[0].Marker left_hand
+SetField Modes[0].WeaponClass[0].WeaponIk[0].AttachToMarker left_hand
+
+SetField Animations[23].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+SetField Animations[27].PlaybackFlags DisableWeaponIk
+SetField Animations[29].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+SetField Animations[30].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+SetField Animations[31].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+SetField Animations[41].PlaybackFlags DisableWeaponIk
+SetField Animations[42].PlaybackFlags ForceWeaponIkOn
+SetField Animations[43].PlaybackFlags DisableWeaponIk
+SetField Animations[44].PlaybackFlags DisableWeaponIk
+
+AddBlockElements animations[45].animationdata.FrameEvents 1
+SetField animations[45].animationdata.Frameevents[0].Frame 12
+SetField Animations[45].PlaybackFlags DisableWeaponIk
+
+# SetInheritance fp any:any:any:overlays dw3\r3ach\objects\weapons\pistol\magnum\animations\fp_spartan\fp_spartan.model_animation_graph
+# SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays[3].GraphIndex 0
+# SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays[3].Animation 9
+
+# AddBlockElements InheritanceList[0].NodeMapFlags 2
+# SetField InheritanceList[0].NodeMapFlags[0].LocalNodeFlags -1
+# SetField InheritanceList[0].NodeMapFlags[1].LocalNodeFlags -1
+# SetField InheritanceList[0].NodeMap[37].LocalNode -1
+# SetField InheritanceList[0].NodeMap[38].LocalNode -1
+# SetField InheritanceList[0].NodeMap[39].LocalNode -1
+# SetField InheritanceList[0].NodeMap[40].LocalNode -1
+# SetField InheritanceList[0].NodeMap[41].LocalNode -1
+SortModes
+
+SetField Animations[17].AnimationData.FrameEvents[1].TypeED AllowInterruption
+SetField Animations[18].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[23].AnimationData.FrameEvents[1].TypeED SecondaryKeyframe
+SetField Animations[23].AnimationData.FrameEvents[2].TypeED AllowInterruption
+
+SetField Animations[30].AnimationData.FrameEvents[1].TypeED AllowInterruption
+SetField Animations[31].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SaveTagChanges
+Exit
+
+
+
+Importanimation "workingdir\animations\elite_fp\automag\first_person dual fire_1.JMM" objects\characters\dervish\fp\weapons\pistol\fp_automag\fp_automag
+EditTag objects\characters\dervish\fp\weapons\pistol\fp_automag\fp_automag.model_animation_graph
+
+AddBlockElements SoundReferences 13
+SetField SoundReferences[0].Reference sound\weapons\magnum\magnum_fp\magnum_dual_pose_left.sound
+SetField SoundReferences[0].Flags LeftArmOnly,FirstPersonOnly
+SetField SoundReferences[1].Reference sound\weapons\magnum\magnum_fp\magnum_dual_ready.sound
+SetField SoundReferences[1].Flags LeftArmOnly
+SetField SoundReferences[2].Reference sound\weapons\magnum\magnum_fp\magnum_dual_reload_left.sound
+SetField SoundReferences[2].Flags LeftArmOnly
+SetField SoundReferences[3].Reference sound\weapons\magnum\magnum_fp\magnum_dual_reload_right.sound
+SetField SoundReferences[3].Flags RightArmOnly
+SetField SoundReferences[4].Reference sound\weapons\magnum\magnum_fp\magnum_melee.sound
+SetField SoundReferences[4].Flags None
+SetField SoundReferences[5].Reference null
+SetField SoundReferences[5].Flags FirstPersonOnly
+SetField SoundReferences[6].Reference sound\weapons\magnum\magnum_fp\magnum_pose2.sound
+SetField SoundReferences[6].Flags FirstPersonOnly
+SetField SoundReferences[7].Reference sound\weapons\magnum\magnum_fp\magnum_ready.sound
+SetField SoundReferences[7].Flags None
+SetField SoundReferences[8].Reference sound\weapons\magnum\magnum_fp\magnum_reload.sound
+SetField SoundReferences[8].Flags None
+SetField SoundReferences[9].Reference sound\weapons\magnum\magnum_fp\magnum_dual_pose_right.sound
+SetField SoundReferences[9].Flags RightArmOnly,FirstPersonOnly
+SetField SoundReferences[10].Reference sound\weapons\magnum\magnum_fp\magnum_dual_ready_right.sound
+SetField SoundReferences[10].Flags RightArmOnly
+SetField SoundReferences[11].Reference sound\weapons\magnum\magnum_fp\magnum_dual_pose2_left.sound
+SetField SoundReferences[11].Flags LeftArmOnly,FirstPersonOnly
+SetField SoundReferences[12].Reference sound\weapons\magnum\magnum_fp\magnum_dual_pose2_right.sound
+SetField SoundReferences[12].Flags RightArmOnly,FirstPersonOnly
+
+AddBlockElements BlendScreens
+SetField BlendScreens[0].Label blend_screen_#0
+SetField BlendScreens[0].RightYawPerFrame 57
+SetField BlendScreens[0].LeftYawPerFrame 57
+SetField BlendScreens[0].RightFrameCount 1
+SetField BlendScreens[0].LeftFrameCount 1
+SetField BlendScreens[0].DownPitchPerFrame 80
+SetField BlendScreens[0].UpPitchPerFrame 90
+SetField BlendScreens[0].DownPitchFrameCount 1
+SetField BlendScreens[0].UpPitchFrameCount 1
+
+
+AddBlockElements Modes
+SetField Modes[0].Name any
+
+AddBlockElements Modes[0].WeaponClass 2
+SetField Modes[0].WeaponClass[0].Label any
+SetField Modes[0].WeaponClass[1].Label dual
+
+AddBlockElements Modes[0].WeaponClass[0].WeaponType
+AddBlockElements Modes[0].WeaponClass[1].WeaponType
+
+SetField Modes[0].WeaponClass[0].WeaponType[0].Label any
+SetField Modes[0].WeaponClass[1].WeaponType[0].Label any
+
+AddBlockElements Modes[0].WeaponClass[1].WeaponType[0].Set.Actions
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[0].Label fire_1
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[0].GraphIndex -1
+
+AddAnimation workingdir\animations\elite_fp\automag
+SortModes
+
+
+# PAIN
+
+# [DUAL IDLE]
+SetField Animations[2].Weight 0.5
+SetField Animations[2].AnimationData.NextAnimation 3
+SetField Animations[3].Weight 0.75
+SetField Animations[3].AnimationData.ParentAnimation 2
+SetField Animations[3].AnimationData.NextAnimation 4
+SetField Animations[4].Weight 1
+SetField Animations[4].AnimationData.ParentAnimation 2
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[1].Animation 2
+
+# [DUAL PITCH AND TURN]
+SetField Animations[10].AnimationData.BlendScreen 0
+
+# [DUAL POSING]
+SetField Animations[11].Weight 0.5
+SetField Animations[11].AnimationData.NextAnimation 12
+SetField Animations[11].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[11].AnimationData.SoundEvents 2
+SetField Animations[11].AnimationData.SoundEvents[1].Sound 9
+
+SetField Animations[12].Weight 1
+SetField Animations[12].AnimationData.ParentAnimation 11
+SetField Animations[12].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[12].AnimationData.SoundEvents 2
+SetField Animations[12].AnimationData.SoundEvents[0].Sound 11
+SetField Animations[12].AnimationData.SoundEvents[1].Sound 12
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[4].Animation 11
+
+# [DUAL READY]
+SetField Animations[14].Weight 0.3846154
+SetField Animations[14].AnimationData.NextAnimation 15
+AddBlockElements Animations[14].AnimationData.SoundEvents 2
+SetField Animations[14].AnimationData.SoundEvents[0].Sound 1
+SetField Animations[14].AnimationData.SoundEvents[1].Sound 10
+
+SetField Animations[15].Weight 0.6923077
+SetField Animations[15].AnimationData.ParentAnimation 14
+SetField Animations[15].AnimationData.NextAnimation 16
+AddBlockElements Animations[15].AnimationData.SoundEvents 2
+SetField Animations[15].AnimationData.SoundEvents[0].Sound 1
+SetField Animations[15].AnimationData.SoundEvents[1].Sound 10
+
+SetField Animations[16].Weight 0.6923077
+SetField Animations[16].AnimationData.ParentAnimation 14
+AddBlockElements Animations[16].AnimationData.SoundEvents 2
+SetField Animations[16].AnimationData.SoundEvents[0].Sound 1
+SetField Animations[16].AnimationData.SoundEvents[1].Sound 10
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[2].Animation 14
+
+# [DUAL RELOAD EMPTY]
+SetField Animations[17].Weight 0.25
+SetField Animations[17].AnimationData.NextAnimation 18
+SetField Animations[17].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[17].AnimationData.FrameEvents 2
+AddBlockElements Animations[17].AnimationData.SoundEvents 2
+SetField Animations[17].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[17].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[17].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[17].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[17].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[18].Weight 0.50
+SetField Animations[18].AnimationData.ParentAnimation 17
+SetField Animations[18].AnimationData.NextAnimation 19
+SetField Animations[18].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[18].AnimationData.FrameEvents 2
+AddBlockElements Animations[18].AnimationData.SoundEvents 2
+SetField Animations[18].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[18].AnimationData.SoundEvents[0].Frame 1
+SetField Animations[18].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[18].AnimationData.SoundEvents[1].Frame 1
+SetField Animations[18].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[18].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[18].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[19].Weight 0.75
+SetField Animations[19].AnimationData.ParentAnimation 17
+SetField Animations[19].AnimationData.NextAnimation 20
+SetField Animations[19].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[19].AnimationData.FrameEvents 2
+AddBlockElements Animations[19].AnimationData.SoundEvents 2
+SetField Animations[19].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[19].AnimationData.SoundEvents[0].Frame 1
+SetField Animations[19].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[19].AnimationData.SoundEvents[1].Frame 1
+SetField Animations[19].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[19].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[19].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[20].Weight 1
+SetField Animations[20].AnimationData.ParentAnimation 17
+SetField Animations[20].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[20].AnimationData.FrameEvents 2
+AddBlockElements Animations[20].AnimationData.SoundEvents 2
+SetField Animations[20].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[20].AnimationData.SoundEvents[0].Frame 1
+SetField Animations[20].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[20].AnimationData.SoundEvents[1].Frame 1
+SetField Animations[20].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[20].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[20].AnimationData.FrameEvents[1].TypeED AllowInterruption
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[5].Animation 17
+
+# [DUAL RELOAD FULL]
+SetField Animations[21].Weight 0.25
+SetField Animations[21].AnimationData.NextAnimation 22
+SetField Animations[21].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[21].AnimationData.FrameEvents 2
+AddBlockElements Animations[21].AnimationData.SoundEvents 2
+SetField Animations[21].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[21].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[21].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[21].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[21].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[22].Weight 0.50
+SetField Animations[22].AnimationData.ParentAnimation 21
+SetField Animations[22].AnimationData.NextAnimation 23
+SetField Animations[22].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[22].AnimationData.FrameEvents 2
+AddBlockElements Animations[22].AnimationData.SoundEvents 2
+SetField Animations[22].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[22].AnimationData.SoundEvents[0].Frame 1
+SetField Animations[22].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[22].AnimationData.SoundEvents[1].Frame 1
+SetField Animations[22].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[22].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[22].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[23].Weight 0.75
+SetField Animations[23].AnimationData.ParentAnimation 21
+SetField Animations[23].AnimationData.NextAnimation 24
+SetField Animations[23].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[23].AnimationData.FrameEvents 2
+AddBlockElements Animations[23].AnimationData.SoundEvents 2
+SetField Animations[23].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[23].AnimationData.SoundEvents[0].Frame 1
+SetField Animations[23].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[23].AnimationData.SoundEvents[1].Frame 1
+SetField Animations[23].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[23].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[23].AnimationData.FrameEvents[1].TypeED AllowInterruption
+
+SetField Animations[24].Weight 1
+SetField Animations[24].AnimationData.ParentAnimation 21
+SetField Animations[24].AnimationData.ProductionFlags VerifySoundEvents
+AddBlockElements Animations[24].AnimationData.FrameEvents 2
+AddBlockElements Animations[24].AnimationData.SoundEvents 2
+SetField Animations[24].AnimationData.SoundEvents[0].Sound 2
+SetField Animations[24].AnimationData.SoundEvents[0].Frame 1
+SetField Animations[24].AnimationData.SoundEvents[1].Sound 3
+SetField Animations[24].AnimationData.SoundEvents[1].Frame 1
+SetField Animations[24].AnimationData.FrameEvents[0].Frame 45
+SetField Animations[24].AnimationData.FrameEvents[1].Frame 100
+SetField Animations[24].AnimationData.FrameEvents[1].TypeED AllowInterruption
+SetField Modes[0].WeaponClass[1].WeaponType[0].Set.Actions[6].Animation 21
+
+# [MELEE STRIKE 1]
+AddBlockElements Animations[31].AnimationData.FrameEvents 3
+AddBlockElements Animations[31].AnimationData.SoundEvents 1
+SetField Animations[31].AnimationData.SoundEvents[0].Sound 4
+SetField Animations[31].AnimationData.FrameEvents[0].Frame 3
+SetField Animations[31].AnimationData.FrameEvents[1].TypeED SecondaryKeyframe
+SetField Animations[31].AnimationData.FrameEvents[1].Frame 15
+SetField Animations[31].AnimationData.FrameEvents[2].TypeED AllowInterruption
+SetField Animations[31].AnimationData.FrameEvents[2].Frame 23
+SetField Animations[31].PlaybackFlags DisableWeaponAim1stPerson
+
+# [MELEE STRIKE 2]
+AddBlockElements Animations[32].AnimationData.FrameEvents 3
+AddBlockElements Animations[32].AnimationData.SoundEvents 1
+SetField Animations[32].AnimationData.SoundEvents[0].Sound 4
+SetField Animations[32].AnimationData.FrameEvents[0].Frame 3
+SetField Animations[32].AnimationData.FrameEvents[1].TypeED SecondaryKeyframe
+SetField Animations[32].AnimationData.FrameEvents[1].Frame 15
+SetField Animations[32].AnimationData.FrameEvents[2].TypeED AllowInterruption
+SetField Animations[32].AnimationData.FrameEvents[2].Frame 23
+SetField Animations[32].PlaybackFlags DisableWeaponAim1stPerson
+
+# [PITCH AND TURN]
+SetField Animations[35].AnimationData.BlendScreen 0
+
+# [POSING]
+SetField Animations[36].Weight 0.5
+SetField Animations[36].AnimationData.NextAnimation 37
+
+SetField Animations[37].Weight 1
+SetField Animations[37].AnimationData.ParentAnimation 36
+AddBlockElements Animations[37].AnimationData.SoundEvents 1
+SetField Animations[37].AnimationData.SoundEvents[0].Sound 6
+SetField Animations[37].AnimationData.ProductionFlags VerifySoundEvents
+SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Actions[6].Animation 36
+
+# [READY]
+AddBlockElements Animations[39].AnimationData.SoundEvents 1
+SetField Animations[39].AnimationData.SoundEvents[0].Sound 7
+SetField Animations[39].PlaybackFlags DisableWeaponAim1stPerson
+
+# [RELOAD EMPTY]
+AddBlockElements Animations[40].AnimationData.FrameEvents 2
+AddBlockElements Animations[40].AnimationData.SoundEvents 1
+SetField Animations[40].AnimationData.SoundEvents[0].Sound 8
+SetField Animations[40].AnimationData.FrameEvents[0].Frame 34
+SetField Animations[40].AnimationData.FrameEvents[1].Frame 47
+SetField Animations[40].AnimationData.FrameEvents[1].TypeED AllowInterruption
+SetField Animations[40].PlaybackFlags DisableWeaponAim1stPerson
+SetField Animations[40].AnimationData.ProductionFlags VerifySoundEvents
+
+# [RELOAD FULL]
+AddBlockElements Animations[41].AnimationData.FrameEvents 2
+AddBlockElements Animations[41].AnimationData.SoundEvents 1
+SetField Animations[41].AnimationData.SoundEvents[0].Sound 8
+SetField Animations[41].AnimationData.FrameEvents[0].Frame 34
+SetField Animations[41].AnimationData.FrameEvents[1].Frame 47
+SetField Animations[41].AnimationData.FrameEvents[1].TypeED AllowInterruption
+SetField Animations[41].PlaybackFlags DisableWeaponAim1stPerson
+SetField Animations[41].AnimationData.ProductionFlags VerifySoundEvents
+
+# [THROW EQUIPMENT]
+AddBlockElements Animations[42].AnimationData.FrameEvents 1
+SetField Animations[42].AnimationData.FrameEvents[0].Frame 12
+
+# [THROW GRENADE]
+AddBlockElements Animations[43].AnimationData.FrameEvents 1
+SetField Animations[43].AnimationData.FrameEvents[0].Frame 11
+SaveTagChanges
+Exit
