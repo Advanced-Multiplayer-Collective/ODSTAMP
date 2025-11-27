@@ -31,14 +31,14 @@ SetField Animations[45].PlaybackFlags DisableWeaponIk
 # SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays[3].GraphIndex 0
 # SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays[3].Animation 9
 
-AddBlockElements InheritanceList[0].NodeMapFlags 2
-SetField InheritanceList[0].NodeMapFlags[0].LocalNodeFlags -1
-SetField InheritanceList[0].NodeMapFlags[1].LocalNodeFlags -1
-SetField InheritanceList[0].NodeMap[37].LocalNode -1
-SetField InheritanceList[0].NodeMap[38].LocalNode -1
-SetField InheritanceList[0].NodeMap[39].LocalNode -1
-SetField InheritanceList[0].NodeMap[40].LocalNode -1
-SetField InheritanceList[0].NodeMap[41].LocalNode -1
+# AddBlockElements InheritanceList[0].NodeMapFlags 2
+# SetField InheritanceList[0].NodeMapFlags[0].LocalNodeFlags -1
+# SetField InheritanceList[0].NodeMapFlags[1].LocalNodeFlags -1
+# SetField InheritanceList[0].NodeMap[37].LocalNode -1
+# SetField InheritanceList[0].NodeMap[38].LocalNode -1
+# SetField InheritanceList[0].NodeMap[39].LocalNode -1
+# SetField InheritanceList[0].NodeMap[40].LocalNode -1
+# SetField InheritanceList[0].NodeMap[41].LocalNode -1
 SortModes
 
 SetField Animations[17].AnimationData.FrameEvents[1].TypeED AllowInterruption
